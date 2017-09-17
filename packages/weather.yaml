@@ -9,3 +9,6 @@ sensor:
       - pressure
       - precipitation
       - windSpeed
+      
+  - platform: dwd_weather_warnings
+    region_name: Siegburg
