@@ -1,0 +1,11 @@
+homeassistant:
+  customize:
+
+sensor:
+  - platform: yr
+    monitored_conditions:
+      - temperature
+      - symbol
+      - pressure
+      - precipitation
+      - windSpeed
