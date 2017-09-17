@@ -11,4 +11,4 @@ sensor:
       - windSpeed
       
   - platform: dwd_weather_warnings
-    region_name: Siegburg
+    region_name: !secret home_region
