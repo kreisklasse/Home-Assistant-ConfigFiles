@@ -1,0 +1,6 @@
+homeassistant:
+  customize:
+
+sensor:
+  - platform: pi_hole
+    host: !secret pihole_ip
