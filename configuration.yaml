@@ -29,6 +29,10 @@ http:
 # Weather prediction
 sensor:
 
+mqtt:
+
+device_tracker:
+  - platform: owntracks
 
 # Text to speech
 tts:
