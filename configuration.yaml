@@ -9,34 +9,33 @@ homeassistant:
   customize: !include customize.yaml
   packages: !include_dir_named packages
 
-sun:
-discovery:
-updater:
-  include_used_components: true
-introduction:
-frontend:
 config:
-history:
-logbook:
 conversation:
-
-http:
-  # Uncomment this to add a password (recommended!)
-  # api_password: PASSWORD
-  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  # base_url: example.duckdns.org:8123
-
-# Weather prediction
-sensor:
-
-mqtt:
-
 device_tracker:
   - platform: owntracks
-
-# Text to speech
+  - platform: mqtt
+    devices:
+      Nexus6: /owntracks
+discovery:
+frontend:
+history:
+http:
+  #api_password: 
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  # base_url: example.duckdns.org:8123
+# introduction:
+logbook:
+mqtt:
+sun:
 tts:
   - platform: google
+updater:
+  include_used_components: true
+
+  
+# Weather prediction
+sensor:
+  #- platform: !include packages/weather.yaml
 
 group: !include groups.yaml
 automation: !include automations.yaml
