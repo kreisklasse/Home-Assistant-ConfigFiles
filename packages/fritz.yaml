@@ -1,0 +1,8 @@
+homeassistant:
+  customize:
+
+switch:
+  - platform: fritzdect
+    username: !secret fritzboxsu_id
+    password: !secret fritzboxsu_pw
+    host: !secret fritzboxsu_ip
