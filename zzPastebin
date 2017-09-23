@@ -1,0 +1,31 @@
+# FritzDECT output from http://192.168.xxx.xxx:8123/api/stream
+
+data: {"time_fired": "2017-09-23T17:42:58.288232+00:00",
+"event_type": "state_changed", "data": 
+{"old_state": 
+{"attributes": 
+{"friendly_name": "Office Mitte", 
+"current_consumption": "55.5", 
+"temperature_unit": "\u00b0C", 
+"temperature": "21.5",
+"current_consumption_unit": "W", 
+"total_consumption_unit": "kWh", 
+"total_consumption": "2.426"}, 
+"state": "on", 
+"last_changed": "2017-09-23T13:19:53.268008+00:00", 
+"last_updated": "2017-09-23T17:40:54.733275+00:00", 
+"entity_id": "switch.office_mitte"}, 
+"new_state": 
+{"attributes": 
+{"friendly_name": "Office Mitte", 
+"current_consumption": "50.4", 
+"temperature_unit": "\u00b0C", 
+"temperature": "21.5", 
+"current_consumption_unit": "W", 
+"total_consumption_unit": "kWh", 
+"total_consumption": "2.427"}, "state": "on", 
+"last_changed": "2017-09-23T13:19:53.268008+00:00", 
+"last_updated": "2017-09-23T17:42:58.288080+00:00", 
+"entity_id": "switch.office_mitte"}, 
+"entity_id": "switch.office_mitte"}, 
+"origin": "LOCAL"}
