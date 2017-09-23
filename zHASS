@@ -1,0 +1,26 @@
+
+# START/STOP/RESTART HOME ASSISTANT
+https://home-assistant.io/docs/installation/hassbian/common-tasks/#startstoprestart-home-assistant
+
+sudo systemctl stop home-assistant@homeassistant.service
+
+sudo systemctl start home-assistant@homeassistant.service
+
+sudo systemctl restart home-assistant@homeassistant.service
+
+sudo systemctl status home-assistant@homeassistant.service
+#
+#
+# READ THE HOME ASSISTANT LOG FILE
+https://home-assistant.io/docs/installation/hassbian/common-tasks/#read-the-home-assistant-log-file
+
+sudo su -s /bin/bash homeassistant
+cd /home/homeassistant/.homeassistant
+nano home-assistant.log
+
+oder als pi user
+
+sudo journalctl -fu home-assistant@homeassistant.service
+
+#
+#
