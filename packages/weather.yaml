@@ -1,14 +1,27 @@
-homeassistant:
+homeassistant:     
   customize:
-
 sensor:
   - platform: yr
     monitored_conditions:
       - temperature
-      - symbol
       - pressure
       - precipitation
       - windSpeed
       
   - platform: dwd_weather_warnings
     region_name: !secret home_region
+
+  - platform: darksky
+    api_key: !secret darksky_api
+    monitored_conditions:
+      - temperature
+      - pressure
+      - precip_intensity
+      - wind_speed
+      - humidity
+      - icon
+      - nearest_storm_distance
+      - precip_type
+      - ozone
+    update_interval:
+      minutes: 5
