@@ -1,3 +1,8 @@
+# https://home-assistant.io/components/sensor.template/
+# https://home-assistant.io/docs/configuration/templating/
+# https://community.home-assistant.io/t/get-a-specific-attributes-on-an-entity/1441
+#
+#
 - platform: template
   sensors:
     fritzkuchemitte:
