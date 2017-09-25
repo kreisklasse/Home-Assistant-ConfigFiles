@@ -5,7 +5,119 @@
 #
 - platform: template
   sensors:
-    fritzkuchemitte:
-      friendly_name: "Küche Mitte"
+    fritzkuchemittewatt:
+      friendly_name: "aktuelle Leistung"
       unit_of_measurement: "Watt"
       value_template: "{{ states.switch.kuche_mitte.attributes.current_consumption }}"
+    fritzkuchemittekwh:
+      friendly_name: "Verbrauch gesamt"
+      unit_of_measurement: "kWh"
+      value_template: "{{ states.switch.kuche_mitte.attributes.total_consumption }}"
+    fritzkuchemittetemp:
+      friendly_name: "Temperatur"
+      unit_of_measurement: "°C"
+      value_template: "{{ states.switch.kuche_mitte.attributes.temperature }}"
+
+    fritzkucheobenwatt:
+      friendly_name: "aktuelle Leistung"
+      unit_of_measurement: "Watt"
+      value_template: "{{ states.switch.kuche_oben.attributes.current_consumption }}"
+    fritzkucheobenkwh:
+      friendly_name: "Verbrauch gesamt"
+      unit_of_measurement: "kWh"
+      value_template: "{{ states.switch.kuche_oben.attributes.total_consumption }}"
+    fritzkucheobentemp:
+      friendly_name: "Temperatur"
+      unit_of_measurement: "°C"
+      value_template: "{{ states.switch.kuche_oben.attributes.temperature }}"
+      
+    fritzkucherechtswatt:
+      friendly_name: "aktuelle Leistung"
+      unit_of_measurement: "Watt"
+      value_template: "{{ states.switch.kuche_rechts.attributes.current_consumption }}"
+    fritzkucherechtskwh:
+      friendly_name: "Verbrauch gesamt"
+      unit_of_measurement: "kWh"
+      value_template: "{{ states.switch.kuche_rechts.attributes.total_consumption }}"
+    fritzkucherechtstemp:
+      friendly_name: "Temperatur"
+      unit_of_measurement: "°C"
+      value_template: "{{ states.switch.kuche_rechts.attributes.temperature }}"
+      
+    fritzofficelinkswatt:
+      friendly_name: "aktuelle Leistung"
+      unit_of_measurement: "Watt"
+      value_template: "{{ states.switch.office_links.attributes.current_consumption }}"
+    fritzofficelinkskwh:
+      friendly_name: "Verbrauch gesamt"
+      unit_of_measurement: "kWh"
+      value_template: "{{ states.switch.office_links.attributes.total_consumption }}"
+    fritzofficelinkstemp:
+      friendly_name: "Temperatur"
+      unit_of_measurement: "°C"
+      value_template: "{{ states.switch.office_links.attributes.temperature }}"
+      
+    fritzofficemittewatt:
+      friendly_name: "aktuelle Leistung"
+      unit_of_measurement: "Watt"
+      value_template: "{{ states.switch.office_mitte.attributes.current_consumption }}"
+    fritzofficemittekwh:
+      friendly_name: "Verbrauch gesamt"
+      unit_of_measurement: "kWh"
+      value_template: "{{ states.switch.office_mitte.attributes.total_consumption }}"
+    fritzofficemittetemp:
+      friendly_name: "Temperatur"
+      unit_of_measurement: "°C"
+      value_template: "{{ states.switch.office_mitte.attributes.temperature }}"
+      
+    fritzofficerechtswatt:
+      friendly_name: "aktuelle Leistung"
+      unit_of_measurement: "Watt"
+      value_template: "{{ states.switch.office_rechts.attributes.current_consumption }}"
+    fritzofficerechtskwh:
+      friendly_name: "Verbrauch gesamt"
+      unit_of_measurement: "kWh"
+      value_template: "{{ states.switch.office_rechts.attributes.total_consumption }}"
+    fritzofficerechtstemp:
+      friendly_name: "Temperatur"
+      unit_of_measurement: "°C"
+      value_template: "{{ states.switch.office_rechts.attributes.temperature }}"
+      
+    fritztvwatt:
+      friendly_name: "aktuelle Leistung"
+      unit_of_measurement: "Watt"
+      value_template: "{{ states.switch.tv.attributes.current_consumption }}"
+    fritztvkwh:
+      friendly_name: "Verbrauch gesamt"
+      unit_of_measurement: "kWh"
+      value_template: "{{ states.switch.tv.attributes.total_consumption }}"
+    fritztvtemp:
+      friendly_name: "Temperatur"
+      unit_of_measurement: "°C"
+      value_template: "{{ states.switch.tv.attributes.temperature }}"
+      
+    fritzbedwatt:
+      friendly_name: "aktuelle Leistung"
+      unit_of_measurement: "Watt"
+      value_template: "{{ states.switch.bed.attributes.current_consumption }}"
+    fritzbedkwh:
+      friendly_name: "Verbrauch gesamt"
+      unit_of_measurement: "kWh"
+      value_template: "{{ states.switch.bed.attributes.total_consumption }}"
+    fritzbedtemp:
+      friendly_name: "Temperatur"
+      unit_of_measurement: "°C"
+      value_template: "{{ states.switch.bed.attributes.temperature }}"
+      
+    fritzalexawatt:
+      friendly_name: "aktuelle Leistung"
+      unit_of_measurement: "Watt"
+      value_template: "{{ states.switch.alexa.attributes.current_consumption }}"
+    fritzalexakwh:
+      friendly_name: "Verbrauch gesamt"
+      unit_of_measurement: "kWh"
+      value_template: "{{ states.switch.alexa.attributes.total_consumption }}"
+    fritzalexatemp:
+      friendly_name: "Temperatur"
+      unit_of_measurement: "°C"
+      value_template: "{{ states.switch.alexa.attributes.temperature }}"
