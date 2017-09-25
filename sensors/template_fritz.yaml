@@ -1,0 +1,6 @@
+- platform: template
+  sensors:
+    fritzkuchemitte:
+      friendly_name: "Küche Mitte"
+      unit_of_measurement: "Watt"
+      value_template: "{{ states.switch.kuche_mitte.attributes.current_consumption }}"
