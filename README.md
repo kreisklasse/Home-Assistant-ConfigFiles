@@ -25,18 +25,3 @@ Sun
 
 https://home-assistant.io/components/sun/
 
-Automation examples using the sun
-
-https://home-assistant.io/cookbook/automation_sun/
-
-https://community.home-assistant.io/t/sun-event-related-timers/8648/15
-
-
-
-Automation:
-
-https://smarthomehobby.wordpress.com/2017/09/24/home-assistant-automations-2-ways/
-
-https://home-assistant.io/docs/automation/
-
-https://home-assistant.io/getting-started/automation-2/
