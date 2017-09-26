@@ -3,6 +3,9 @@ default_view:
   icon: mdi:home
   entities:
     - group.office
+    - group.raspi3
+    - group.wetterds
+    - group.wetteryr
     - light.eingang
     - light.kuchentisch
     - light.schreibtisch
@@ -10,11 +13,39 @@ default_view:
 
     
 office:
-  name: Büro
+  name: PiHole
   entities:
     - sensor.pihole_ads_percentage_blocked_today
     - sensor.pihole_dns_queries_today
-    - sensor.ram_use
-    - sensor.disk_use_
-    - sensor.last_boot
+    - sensor.pihole_dns_unique_domains
     
+raspi3:
+  name: RaspberryPI3
+  entities:
+    - sensor.last_boot
+    - sensor.since_last_boot
+    - sensor.ram_use
+    - sensor.average_load_5m
+    - sensor.disk_use_
+    - sensor.swap_use
+    
+wetterds:
+  name: Wetter DarkSky
+  entities:
+    - sensor.dark_sky_icon
+    - sensor.dark_sky_temperature
+    - sensor.dark_sky_daily_high_temperature
+    - sensor.dark_sky_daily_low_temperature
+    - sensor.dark_sky_humidity
+    - sensor.dark_sky_pressure
+    - sensor.dark_sky_visibility
+    - sensor.dark_sky_ozone
+    - sensor.dark_sky_nearest_storm_distance
+    - sensor.dark_sky_hourly_summary
+    
+wetteryr:
+  name: Wetter yr
+  entities:
+    - sensor.yr_temperature
+    - sensor.yr_humidity
+    - sensor.yr_pressure
