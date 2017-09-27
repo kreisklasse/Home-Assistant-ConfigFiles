@@ -2,10 +2,11 @@ default_view:
   view: yes
   icon: mdi:home
   entities:
-    - group.office
+    - group.pihole
     - group.raspi3
     - group.wetterds
     - group.wetteryr
+    - group.tankerkonig
     - light.eingang
     - light.kuchentisch
     - light.schreibtisch
