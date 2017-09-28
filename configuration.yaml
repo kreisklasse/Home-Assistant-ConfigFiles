@@ -36,6 +36,9 @@ http:
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
   # base_url: example.duckdns.org:8123
 # introduction:
+light:
+  - platform: hue
+    host: !secret hue_ip
 logbook:
   exclude:
     entities:
@@ -49,6 +52,9 @@ mqtt:
 recorder:
   purge_days: 7
 sun:
+tradfri:
+  host: !secret tradfri_ip
+  api_key: !secret tradfri_api_key
 tts:
   - platform: google
 updater:
