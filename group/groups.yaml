@@ -5,15 +5,18 @@ default_view:
     - group.pihole
     - group.raspi3
     - group.wetterds
-    - group.wetteryr
+#    - group.wetteryr
     - group.tankerkonig
-    - light.eingang
+    - light.gate
     - light.kuchentisch
     - light.schreibtisch
     - light.wohnzimmer
+    - sensor.opensky
+    - group.openskygr
+    - group.zwave_auge
 
     
-office:
+pihole:
   name: PiHole
   entities:
     - sensor.pihole_ads_percentage_blocked_today
@@ -29,19 +32,32 @@ raspi3:
     - sensor.average_load_5m
     - sensor.disk_use_
     - sensor.swap_use
-    
+ 
+tankerkonig:
+  name: Benzinpreise E10 - SU
+  entities:
+    - sensor.mundorf_e10
+    - sensor.zeithstr_e10
+
+  
 wetterds:
   name: Wetter DarkSky
   entities:
     - sensor.dark_sky_icon
     - sensor.dark_sky_temperature
+    - sensor.dark_sky_apparent_temperature
     - sensor.dark_sky_daily_high_temperature
     - sensor.dark_sky_daily_low_temperature
+    - sensor.dark_sky_dew_point
     - sensor.dark_sky_humidity
     - sensor.dark_sky_pressure
+    - sensor.dark_sky_wind_speed
+    - sensor.dark_sky_wind_bearing
     - sensor.dark_sky_visibility
+    - sensor.dark_sky_cloud_cover
     - sensor.dark_sky_ozone
     - sensor.dark_sky_nearest_storm_distance
+    - sensor.dark_sky_precip_type
     - sensor.dark_sky_hourly_summary
     
 wetteryr:
@@ -50,3 +66,16 @@ wetteryr:
     - sensor.yr_temperature
     - sensor.yr_humidity
     - sensor.yr_pressure
+    
+openskygr:
+  name: Opensky
+  entities:
+    - sensor.opensky
+    - sensor.opensky_entry
+    - sensor.opensky_entry_callsign
+  
+zwave_auge:
+  name: Auge
+  entities:
+    - sensor.fibaro_system_fgms001zw5_motion_sensor_temperature
+    - sensor.fibaro_system_fgms001zw5_motion_sensor_luminance
