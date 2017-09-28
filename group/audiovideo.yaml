@@ -1,0 +1,18 @@
+audiovideo:
+  name: auvid
+  view: yes
+  icon: mdi:speaker
+  entities:
+    - group.chromecast
+    - media_player.kuche
+    - media_player.wohnzimmer
+    - media_player.schlafzimmer
+    - media_player.bed_room_ue55f8000
+    
+chromecast:
+  name: Chromecast
+  entities:
+    - media_player.ghome
+    - media_player.kuche_2
+    - media_player.fernseher
+    
