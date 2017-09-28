@@ -1,4 +1,3 @@
-# Show data of AVM Fritz!DECT switches
 steckdosen:
   name: Steckdosen
   view: yes
@@ -15,7 +14,7 @@ steckdosen:
     - group.fritzbed
     
 fritzkuchemitte:
-  name: Steckdose Küche Mitte
+  name: Küche Mitte
   entities:
     - switch.kuche_mitte
     - sensor.fritzkuchemittewatt
@@ -23,7 +22,7 @@ fritzkuchemitte:
     - sensor.fritzkuchemittetemp
     
 fritzkucherechts:
-  name: Steckdose Küche Rechts
+  name: Küche Rechts
   entities:
     - switch.kuche_rechts
     - sensor.fritzkucherechtswatt
@@ -31,7 +30,7 @@ fritzkucherechts:
     - sensor.fritzkucherechtstemp
 
 fritzkucheoben:
-  name: Steckdose Küche Oben
+  name: Küche Oben
   entities:
     - switch.kuche_oben
     - sensor.fritzkucheobenwatt
@@ -39,7 +38,7 @@ fritzkucheoben:
     - sensor.fritzkucheobentemp
     
 fritzofficelinks:
-  name: Steckdose Büro Links
+  name: Büro Links
   entities:
     - switch.office_links
     - sensor.fritzofficelinkswatt
@@ -47,7 +46,7 @@ fritzofficelinks:
     - sensor.fritzofficelinkstemp
     
 fritzofficemitte:
-  name: Steckdose Büro Mitte
+  name: Büro Mitte
   entities:
     - switch.office_mitte
     - sensor.fritzofficemittewatt
@@ -55,7 +54,7 @@ fritzofficemitte:
     - sensor.fritzofficemittetemp
     
 fritzofficerechts:
-  name: Steckdose Büro Rechts
+  name: Büro Rechts
   entities:
     - switch.office_rechts
     - sensor.fritzofficerechtswatt
@@ -63,7 +62,7 @@ fritzofficerechts:
     - sensor.fritzofficerechtstemp
     
 fritzalexa:
-  name: Steckdose Assistenten
+  name: Assistenten
   entities:
     - switch.alexa
     - sensor.fritzalexawatt
@@ -71,7 +70,7 @@ fritzalexa:
     - sensor.fritzalexatemp
     
 fritzbed:
-  name: Steckdose Schlafzimmer
+  name: Schlafzimmer
   entities:
     - switch.bed
     - sensor.fritzbedwatt
@@ -79,9 +78,16 @@ fritzbed:
     - sensor.fritzbedtemp
     
 fritztv:
-  name: Steckdose TV
+  name: TV
   entities:
     - switch.tv
     - sensor.fritztvwatt
     - sensor.fritztvkwh
     - sensor.fritztvtemp
+    
+zwavekucherechts:
+  name: Küche Links
+  entities:
+    - switch.fibaro_sytem_fgwpef_wall_plug_switch
+    - sensor.fibaro_sytem_fgwpef_wall_plug_power
+    - sensor.fibaro_sytem_fgwpef_wall_plug_energy
