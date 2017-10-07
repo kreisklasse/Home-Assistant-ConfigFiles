@@ -5,23 +5,30 @@ my Home Assistant configuration files.
 I am a newbie with HASS, so be patient with me.
 
 
-Links:
+## Where I started
 
-https://home-assistant.io/
-
-HASSbian - Raspbian Image mit HomeAssistant auto-installer
-https://home-assistant.io/docs/installation/hassbian/
-
-Splitting up the configuration
-https://home-assistant.io/docs/configuration/splitting_configuration/
-
-Storing secrets
-https://home-assistant.io/docs/configuration/secrets/
+- [Home-Assistant.io](https://home-assistant.io/) 
+- [HASSbian - Raspbian Image mit HomeAssistant auto-installer](https://home-assistant.io/docs/configuration/splitting_configuration/)
+- [Splitting up the configuration.yaml](https://github.com/cbulock/home-assistant-configs)
+- [Storing secrets](https://home-assistant.io/docs/configuration/secrets/)
 
 
-Components:
+## Devices on HA
 
-Sun
+- Raspberry Pi 3
+- AVM FritzDECT 200 Wall Plugs
+- Google Chromecast Audio
+- Google Chromecast
+- Philips Hue Bridge
+- Philips Hue Colour Bulbs
+- Sonos Loudspeaker
+- Tradfri (IKEA) Hub
+- Tradfri White Bulbs
+- Z-Wave USB.ME Stick
+- Z-Wave Fibaro FGMS001 Motion Sensor
+- Z-Wave Fibaro FGWPEF Wall Plugs
 
-https://home-assistant.io/components/sun/
 
+
+
+// ![Home Assistant](https://github.com/xx.jpg ) -- Bild anzeigen lassen
