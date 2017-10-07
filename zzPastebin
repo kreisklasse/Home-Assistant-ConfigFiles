@@ -1,5 +1,19 @@
 # FritzDECT output from http://192.168.xxx.xxx:8123/api/stream
 
+# Opensky module
+data: {"data": {"callsign": "TCW1CE", "sensor": "opensky"}, "time_fired": "2017-10-07T20:29:05.369001+00:00", "event_type": "opensky_entry", "origin": "LOCAL"}
+
+data: {"data": {"callsign": "BAW663", "sensor": "opensky"}, "time_fired": "2017-10-07T20:29:05.370564+00:00", "event_type": "opensky_exit", "origin": "LOCAL"}
+
+
+
+
+
+
+
+
+# AVM FrietzDECT200
+
 data: {"time_fired": "2017-09-23T17:42:58.288232+00:00",
 "event_type": "state_changed", "data": 
 {"old_state": 
