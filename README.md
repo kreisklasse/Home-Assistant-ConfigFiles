@@ -1,8 +1,8 @@
-# Home Assistant
+# My Home Assistant Howto
 
-my Home Assistant configuration files.
+My Home Assistant configuration files and links where i have found help.
 
-I am a newbie with HASS, so be patient with me.
+I am a newbie to HASS, so be patient with me.
 
 
 ## Where I started
