@@ -5,7 +5,14 @@ data: {"data": {"callsign": "TCW1CE", "sensor": "opensky"}, "time_fired": "2017-
 
 data: {"data": {"callsign": "BAW663", "sensor": "opensky"}, "time_fired": "2017-10-07T20:29:05.370564+00:00", "event_type": "opensky_exit", "origin": "LOCAL"}
 
+data: {"data": {"callsign": "NLY2E", "sensor": "opensky"}, "time_fired": "2017-10-07T20:29:44.894385+00:00", "event_type": "opensky_exit", "origin": "LOCAL"}
 
+data: {"data": 
+{"old_state": {"last_updated": "2017-10-07T20:28:13.276028+00:00", "last_changed": "2017-10-07T20:28:13.276028+00:00", "state": "7", "entity_id": "sensor.opensky", 
+"attributes": {"unit_of_measurement": "flights", "attribution": "Information provided by the OpenSky Network (https://opensky-network.org)", "friendly_name": "opensky", "icon": "mdi:airplane"}}, 
+"entity_id": "sensor.opensky", "new_state": {"last_updated": "2017-10-07T20:29:44.910317+00:00", "last_changed": "2017-10-07T20:29:44.910317+00:00", "state": "6", "entity_id": "sensor.opensky", 
+"attributes": {"unit_of_measurement": "flights", "attribution": "Information provided by the OpenSky Network (https://opensky-network.org)", "friendly_name": "opensky", "icon": "mdi:airplane"}}}, 
+"time_fired": "2017-10-07T20:29:44.910419+00:00", "event_type": "state_changed", "origin": "LOCAL"}
 
 
 
