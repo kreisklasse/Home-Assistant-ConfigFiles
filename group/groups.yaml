@@ -79,3 +79,5 @@ zwave_auge:
   entities:
     - sensor.fibaro_system_fgms001zw5_motion_sensor_temperature
     - sensor.fibaro_system_fgms001zw5_motion_sensor_luminance
+    - sensor.fibaro_system_fgms001zw5_motion_sensor_burglar
+#    - states.zwave.fibaro_system_fgms001zw5_motion_sensor.attributes.battery_level
