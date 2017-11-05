@@ -1,0 +1,25 @@
+automation:
+  name: Automation
+  view: yes
+  icon: mdi:robot
+  entities:
+    - group.all_automations
+    - group.blaues_licht_kuche
+    - group.sun_modul
+    
+    
+blaues_licht_kuche:
+  name: Blaues Licht Küche
+  entities:
+    - automation.blaue_kuche_an
+    - automation.blaue_kuche_aus
+    
+sun_modul:
+  name: Sun
+  entities:
+    - sun.sun_next_rising
+    - sun.sun_next_setting
+    - sun.sun_dusk
+    - sun.sun_dawn
+    - sun.sun_elevation
+    - sun.sun_azimuth
