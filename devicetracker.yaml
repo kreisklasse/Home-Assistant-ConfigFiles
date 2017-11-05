@@ -1,0 +1,5 @@
+- platform: fritz
+- platform: owntracks
+- platform: mqtt
+  devices:
+    Nexus6: /owntracks

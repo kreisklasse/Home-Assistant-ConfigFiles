@@ -1,0 +1,4 @@
+# logbook.yaml - only excludes, to get new entities logged
+exclude:
+    entities:
+      - sensor.fibaro_system_fgwpef_wall_plug_exporting
