@@ -1,0 +1,8 @@
+- platform: opensky
+  radius: 5
+  
+#- platform: template
+#  sensors:
+#    entry_callsign:
+#      friendly_name: "Callsign"
+#      value_template: "{{ states.sensor.opensky.opensky_entry.attributes.callsign }}"

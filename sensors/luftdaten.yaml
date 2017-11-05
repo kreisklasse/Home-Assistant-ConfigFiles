@@ -1,0 +1,11 @@
+- platform: luftdaten
+  sensorid: 6580
+  monitored_conditions:
+    - P1
+    - P2
+    
+- platform: luftdaten
+  sensorid: 6581
+  monitored_conditions:
+    - temperature
+    - humidity
