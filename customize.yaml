@@ -1,0 +1,18 @@
+sensor.ccaudiokuche:
+  friendly_name: Chromecast Audio Küche
+  icon: mdi:cast
+sensor.ccvideotv:
+  friendly_name: Chromecast TV
+  icon: mdi:cast
+sensor.firesticktvsu:
+  friendly_name: Firestick
+  icon: mdi:fire
+sensor.medionpad:
+  friendly_name: Medion-Pad
+  icon: mdi:cellphone
+sensor.samsungnote8:
+  friendly_name: Samsung Note8-Pad
+  icon: mdi:cellphone
+sensor.nexus6p:
+  friendly_name: Nexus 6P
+  icon: mdi:cellphone-dock
