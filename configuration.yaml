@@ -25,12 +25,19 @@ frontend:
 history:
   exclude:
     entities:
-      - sensor.average_load_5m
-      - sensor.disk_use_
-      - sensor.last_boot
-      - sensor.ram_use
-      - sensor.since_last_boot
-      - sensor.swap_use
+      - sun.sun
+      - binary_sensor.workday_sensor
+      - sensor.yr_symbol
+      - sensor.dark_sky_apparent_temperature
+
+recorder:
+  purge_keep_days: 14
+  exclude:
+    entities:
+      - sun.sun
+      - binary_sensor.workday_sensor
+      - sensor.yr_symbol
+      - sensor.dark_sky_apparent_temperature
 http:
   #api_password: 
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
@@ -49,12 +56,7 @@ logbook:
       - sensor.since_last_boot
       - sensor.swap_use
 mqtt:
-recorder:
-  purge_days: 7
 sun:
-tradfri:
-  host: !secret tradfri_ip
-  api_key: !secret tradfri_api_key
 tts:
   - platform: google
 updater:
